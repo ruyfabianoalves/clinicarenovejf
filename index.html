@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinica Renove JF - Grupo VIP</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '5061136804111347');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=5061136804111347&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f7f9;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 450px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 22px;
+            color: #2b2b2b;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #005fcc;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Entre para o Grupo VIP Renove</h1>
+    <p>Receba ofertas exclusivas de Harmonização Facial, Implantes, Botox e Preenchimento.</p>
+
+    <form id="leadForm">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <input type="text" id="whatsapp" placeholder="WhatsApp com DDD" required />
+        <input type="email" id="email" placeholder="Seu e-mail (opcional)" />
+
+        <button type="submit">Garantir minha vaga</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("leadForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    fbq('track', 'Lead'); // dispara evento de lead
+
+    // redirecionamento para o grupo do WhatsApp
+    window.location.href = "https://chat.whatsapp.com/JyenpH1G1ML3oB8t2sftTH";
+});
+</script>
+
+</body>
+</html>
